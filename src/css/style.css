@@ -136,6 +136,10 @@ header li:hover{
     height: auto;
 }
 
+figcaption {
+    font-size: 0.8rem;
+}
+
 footer {
     display: flex;
     justify-content: space-between;
