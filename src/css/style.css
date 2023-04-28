@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-shadow: 0 1px 0 rgb(0 0 0 / 50%);;
+    font-family: goodtimes;
+}
+
+body {
+    background-image: url(../img/pcEscuroFreeuse.jpg);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    
+}
+
+header {
+    height: 80px;
+    width: 100%;
+    margin: 1% 0 0 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between ;
+    background-color: rgb(21, 21, 21);
+}
+
+.headerLogoContainer {
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    width: 40%;
+    padding-left: 4%;
+}
+
+.logoImg {
+    width: 200px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 2px solid #ed145b;
+}
+
+.headerLinkContainer {
+    background-color: transparent;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+header ul {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    
+}
+    
+
+header li {
+    width: 100px;
+    height: 80%;
+    list-style-type: none;
+    cursor: pointer;
+    color: black;
+    background-color: transparent;
+    margin-right: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 2px solid rgb(48, 48, 48);
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+header li a{
+    text-decoration: none;
+    color: white;
+}
+header li:hover{
+    border: 1px solid white;
+    color: white;
+    background-color: #ed145b;
+    transition: all 0.4s ease-in-out;
+}
+
+footer {
+    background-color: rgb(21, 21, 21);
+    color: white;
+}
+
+footer a img {
+
+}
