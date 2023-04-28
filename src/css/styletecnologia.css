@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-shadow: 0 1px 0 rgb(0 0 0 / 50%);;
+    font-family: goodtimes;
+    font-size: 14px;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+body {
+    background-color: white;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    
+}
+
+header {
+    height: 80px;
+    width: 100%;
+    margin: 1em 0 0 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between ;
+    background-color: rgb(21, 21, 21);
+}
+
+.headerLogoContainer {
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 100%;
+    min-width: 10%;
+    height: auto;
+    padding-left: 4%;
+    box-sizing: border-box;
+}
+
+.logoImg {
+    max-width: 33%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    border: 2px solid #ed145b;
+}
+
+.headerLinkContainer {
+    background-color: transparent;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+header ul {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    
+}
+    
+
+header li {
+    width: 100px;
+    height: 80%;
+    list-style-type: none;
+    cursor: pointer;
+    color: black;
+    background-color: transparent;
+    margin-right: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 2px solid rgb(48, 48, 48);
+    letter-spacing: 1px;
+}
+
+header li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+header li:hover{
+    border: 1px solid white;
+    color: white;
+    background-color: #ed145b;
+    transition: all 0.4s ease-in-out;
+}
+
+.fullHomeContainer  {
+    width: 100%;
+    height: 1080px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+
+.midHomeContainer {
+    background-color: transparent;
+    box-shadow: none;
+    width: 100%;
+    height: 83%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.homeContentContainer {
+    height: 100%;
+    width: 60%;
+    background-color: transparent;
+    text-align: center;
+    box-sizing: border-box;
+    max-width: 70vw;
+    overflow-y: auto;
+    padding-top: 2%;
+    color: black;
+}
+
+.homeContentContainer h2{
+    padding: 4% 0 2% 0;
+    font-size: 2rem;
+}
+
+.contentImg {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(21, 21, 21);
+    color: white;
+}
+  
+footer nav {
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+}
+  
+footer nav a {
+    margin-left: 10%;
+    max-width: 40px;
+    flex-grow: 1;
+}
+  
+footer nav a img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer nav a img:hover {
+    filter: saturate(2.5) hue-rotate(20deg);
+}
+
+@media only screen and (max-width: 1200px) {
+
+    *{
+        text-shadow: 0 1px 0 rgb(0 0 0 / 30%);;
+        font-family: goodtimes;
+        font-size: 12px;
+    }
+    
+    header li {
+        width: 100px;
+        height: 60%;
+        background-color: transparent;
+        margin-right: 3%;
+        border: 2px solid rgb(48, 48, 48);
+        letter-spacing: 1px;
+    }
+    
+    header li a{
+        text-decoration: none;
+        color: white;
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .headerLogoContainer {
+        background-color: transparent;
+        max-width: 33%;
+        min-width: 200px;
+        padding-left: 4%;
+    }
+    
+    .logoImg {
+        max-width: 23vw;
+        min-width: 20%;
+        border: 2px solid #ed145b;
+    }
+
+    header li {
+        width: 100px;
+        height: 60%;
+        background-color: transparent;
+        margin-right: 3%;
+        border: 2px solid rgb(48, 48, 48);
+        letter-spacing: 1px;
+    }
+
+    header li a{
+        font-size: 1rem;
+        padding: 0 1vw 0 1vw;
+    }
+
+    .homeContentContainer {
+        max-width: 80%;
+        padding-top: 2%;
+        color: black;
+    }
+
+    .contentImg {
+        max-width: 55vw;
+    }
+}   
